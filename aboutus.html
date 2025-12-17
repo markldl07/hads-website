@@ -1,61 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HADS - About us</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HADS - About us</title>
+  <link rel="icon" type="image/png" href="images/hads-logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <div class="announcement-bar">
-    Volunteer recruitment for the 2025–2026 school year is now open. Join us on our next shelter visit!
-  </div>
-
+<body class="page-about">
   <header>
-    <nav>
-      <a href="index.html" class="logo-container">
-        <img src="images/hads-logo.png" alt="HADS Logo">
-      </a>
+  <nav>
+    <a href="index.html" class="logo-container">
+      <img src="images/hads-logo.png" alt="HADS Logo">
+    </a>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="aboutus.html">About us</a></li>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-        <li class="dropdown">
-          <a href="services.html" class="dropbtn">Services ▾</a>
-          <ul class="dropdown-content">
-            <li><a href="services.html">Our Mission</a></li>
-            <li><a href="services.html">What We Do</a></li>
-            <li><a href="services.html">Adoption Support</a></li>
-            <li><a href="services.html">Community Events</a></li>
-          </ul>
-        </li>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html" class="active">About us</a></li>
 
-        <li><a href="partners.html">Partners</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <li class="dropdown">
+        <a href="departments.html" class="dropbtn">Departments ▾</a>
+        <ul class="dropdown-content">
+          <li><a href="departments.html">Leadership Structure</a></li>
+          <li><a href="departments.html">Departments & Roles</a></li>
+          <li><a href="departments.html">Member Roster</a></li>
+        </ul>
+      </li>
 
-<main>
-  <section class="section aboutus">
-    <img src="images/HADS.png" alt="HADS group photo">
-    <div class="aboutus-text">
-      <h2>About us!</h2>
-      <p>
-        HADS is a student led volunteer club dedicated to supporting abandoned animals across Jeju. We are partners with local shelters, assist with care routines, and raise awareness about adoption.
-      </p>
-    </div>
-  </section>
-</main>
+      <li><a href="partners.html">Partners</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="schedule.html">Schedule</a></li>
+      <!--<li><a href="history.html">History</a></li>-->
 
-<footer>
-  <p>TEL : 010-3845-2644 | E-mail : hads224@gmail.com</p>
-  <p>Copyright &copy;2025 HADS CO., LTD. All rights reserved.</p>
-  <p>Created by Mark Lee; Class of 2026</p>
-</footer>
+    </ul>
+  </nav>
+</header>
 
+
+  <main>
+    <section class="section reveal">
+      <div class="aboutus">
+        <img src="images/IMG_0573.JPG">
+
+        <div class="aboutus-text">
+          <h2>About HADS</h2>
+          <p>
+            HADS is a student led volunteer club based at St Johnsbury Academy Jeju since 2020. Dedicated to supporting
+            abandoned animals across the island. Our members regularly visit local shelters to help with
+            cleaning, walking, feeding, and socializing dogs that are still waiting for a home.
+          </p>
+          <br>
+          <p>
+            Beyond volunteering, HADS runs iniativies such as FurMatch, FurFlight, ROK9, 
+          </p>
+        </div>
+      </div>
+
+      <!-- photo highlights for About page -->
+      <div style="margin-top: 26px;">
+        <h3 style="font-size: 18px; margin-bottom: 8px;">Photo highlights</h3>
+        <p class="section-intro">
+          A few moments that capture who we are as a club: students, shelters, and the animals we keep coming back for.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="images/2020volunteering.jpeg">
+            <p class="caption">Early stage of founding HADS!</p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/theodasom.JPG">
+            <p class="caption">November 22nd 2025, Hallim Animal Shelter.</p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/20250329hallimSieun.jpeg">
+            <p class="caption">March 29th 2025, Hallim Animal Shelter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>TEL : 010-3845-2644 | E-mail : hads224@gmail.com</p>
+    <p>Copyright &copy;2025 HADS CO., LTD. All rights reserved.</p>
+    <p>Created by Mark Lee; Class of 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

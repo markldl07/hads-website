@@ -1,71 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HADS - Partners</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HADS - Partners</title>
+  <link rel="icon" type="image/png" href="images/hads-logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <div class="announcement-bar">
-    Volunteer recruitment for the 2025–2026 school year is now open. Join us on our next shelter visit!
-  </div>
-
+<body class="page-partners">
   <header>
     <nav>
       <a href="index.html" class="logo-container">
         <img src="images/hads-logo.png" alt="HADS Logo">
       </a>
 
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutus.html">About us</a></li>
 
         <li class="dropdown">
-          <a href="services.html" class="dropbtn">Services ▾</a>
+          <a href="departments.html" class="dropbtn">Departments ▾</a>
           <ul class="dropdown-content">
-            <li><a href="services.html">Our Mission</a></li>
-            <li><a href="services.html">What We Do</a></li>
-            <li><a href="services.html">Adoption Support</a></li>
-            <li><a href="services.html">Community Events</a></li>
+            <li><a href="departments.html">Leadership Structure</a></li>
+            <li><a href="departments.html">Departments &amp; Roles</a></li>
+            <li><a href="departments.html">Member Roster</a></li>
           </ul>
         </li>
 
-        <li><a href="partners.html">Partners</a></li>
+        <li><a href="partners.html" class="active">Partners</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <!--<li><a href="history.html">History</a></li>-->
       </ul>
     </nav>
   </header>
 
+  <main>
+    <section class="section partners reveal">
+      <div class="partners-header">
+        <h2>Our partners</h2>
+        <p class="section-intro">
+          HADS collaborates with organizations that care about both people and animals. Together we
+          connect rescued dogs to families, support flight volunteers, and share stories that cross borders.
+        </p>
+        <p class="partners-note">
+          Tap a logo to visit each partner and learn more about our work together.
+        </p>
+      </div>
 
-<main>
-  <section class="section partners">
-    <h2 style="font-size: 32px; margin-bottom: 25px; text-align: center;">Partners</h2>
+      <!-- LOGO GRID -->
+      <div class="partners-grid">
+        <!-- ICNtoHome -->
+        <a href="https://www.instagram.com/icntohome/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/icntohomelogo.jpg" alt="ICNtoHome logo">
+          </div>
 
-    <div class="partners-item">
-      <p>Since 2025, ICNtoHome and HADS has been <b>partners</b> to connect flight-volunteers and dogs to find fur-ever homes.</p>
-      <h4><a href="https://www.instagram.com/icntohome/" target="_blank">ICNtoHome X HADS</a></h4>
-    </div>
-    
-    <div class="partners-item">
-      <p>Since 2024, FurMatch and HADS has been <b>partners</b> to match abandoned, abused, and rescued dogs to Fur-ever homes all across the globe. </p>
-      <h4><a href="https://www.instagram.com/furmatch_official/" target="_blank">FurMatch X HADS</a></h4>
-    </div>
+          <div class="partner-name">ICNtoHome</div>
+          <div class="partner-tag">Flight volunteers for rescued dogs leaving ICN.</div>
+        </a>
 
-    <div class="partners-item">
-      <p>Since 2024, KORUS and HADS has been <b>partners</b> to match Korean abused animals to Fur-ever homes all across the globe. </p>
-      <h4><a href="https://www.instagram.com/korus6.25/" target="_blank">KORUS X HADS</a></h4>
-    </div>
-  </section>
-</main>
+        <!-- FurMatch -->
+        <a href="https://www.instagram.com/furmatch_official/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/furmatchlogo.png" alt="FurMatch logo">
+          </div>
+          <div class="partner-name">FurMatch</div>
+          <div class="partner-tag">Adoption matching and storytelling for Korean rescue dogs.</div>
+        </a>
 
-<footer>
-  <p>TEL : 010-3845-2644 | E-mail : hads224@gmail.com</p>
-  <p>Copyright &copy;2025 HADS CO., LTD. All rights reserved.</p>
-  <p>Created by Mark Lee; Class of 2026</p>
-</footer>
+        <!-- FurFlight -->
+        <a href="https://www.instagram.com/furmatch_official/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/furflightlogo.png" alt="FurFlight logo">
+          </div>
+          <div class="partner-name">FurFlight</div>
+          <div class="partner-tag">Flight volunteer program helping adopted dogs reach new homes.</div>
+        </a>
 
+        <!-- KORUS -->
+        <a href="https://www.instagram.com/korus6.25/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/korus instagram logo.png" alt="KORUS logo">
+          </div>
+          <div class="partner-name">KORUS</div>
+          <div class="partner-tag">Gratitude, care packages, and outreach with U.S. service members.</div>
+        </a>
+
+        <!-- Hallim Animal Shelter -->
+        <a href="https://www.instagram.com/hallim_animal_shelter/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/hallimanimalshelterlogo.jpg" alt="Hallim Animal Shelter logo">
+          </div>
+          <div class="partner-name">Hallim Animal Shelter</div>
+          <div class="partner-tag">Long-term partner shelter caring for abandoned animals in Hallim.</div>
+        </a>
+
+        <!-- Jeju Happy Shelter -->
+        <a href="https://www.instagram.com/jeju_happyshelter/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/jejuhappyshelterlogo.jpg" alt="Jeju_Happy_Shelter logo">
+          </div>
+          <div class="partner-name">Jeju Happy Shelter</div>
+          <div class="partner-tag">Haengbokinae (Happy) Shelter partnership on Jeju Island.</div>
+        </a>
+
+        <!-- BigDogForest -->
+        <a href="https://www.instagram.com/bigdogforest/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/bigdogforestlogo.jpg" alt="BigDogForest logo">
+          </div>
+          <div class="partner-name">BigDogForest</div>
+          <div class="partner-tag">Animal Shelter located in Ilsan, South Korea with a focus on larger and older breed dogs.</div>
+        </a>
+
+        <!-- JejuDogCat -->
+        <a href="https://www.instagram.com/hondidorang2023/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/hondidoranglogo.jpg" alt="Hondidorang logo">
+          </div>
+          <div class="partner-name">Hondidorang</div>
+          <div class="partner-tag">Dog and Cat shelter located in Seogwipo and Sanbangsan Mt.</div>
+        </a>
+
+        <!-- JejuDogCat -->
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/jejefriendslogo.jpg" alt="JejeFriends logo">
+          </div>
+          <div class="partner-name">JejeFriends</div>
+          <div class="partner-tag">Looks over Hallim Animal Shelter and provides volunteering experience in Jeju Island.</div>
+        </a>
+
+        <!-- JejuDogCat -->
+        <a href="https://www.instagram.com/jeju.now/" target="_blank" rel="noopener noreferrer" class="partner-card">
+          <div class="partner-logo">
+            <img src="images/partners/jejunowlogo.jpg" alt="Jeju.Now logo">
+          </div>
+          <div class="partner-name">Jeju Now</div>
+          <div class="partner-tag">Street dog and cat rescue, provides volunteering experience for members.</div>
+        </a>
+      </div>
+
+      <!-- EXISTING PHOTO HIGHLIGHTS KEPT UNDER LOGOS -->
+      <!--<div class="partners-highlights">
+        <h3>Partnership highlights</h3>
+        <p class="section-intro">
+          Some moments from our collaborations with ICNtoHome, FurMatch, and KORUS.
+        </p>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img loading="lazy" src="images/partners_icntohome.jpg" alt="HADS students with ICNtoHome at the airport">
+            <p class="caption">Students supporting a flight volunteer sending rescued dogs overseas.</p>
+          </div>
+
+          <div class="gallery-item">
+            <img loading="lazy" src="images/partners_furmatch.jpg" alt="HADS and FurMatch preparing adoption materials">
+            <p class="caption">Preparing photos and profiles with FurMatch to introduce adoptable dogs.</p>
+          </div>
+
+          <div class="gallery-item">
+            <img loading="lazy" src="images/partners_korus.jpg" alt="HADS and KORUS care packages for soldiers and animals">
+            <p class="caption">Care packages and outreach that connect animal rescue with community service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+  </main>
+
+  <footer>
+    <p>TEL : 010-3845-2644 | E-mail : hads224@gmail.com</p>
+    <p>Copyright &copy;2025 HADS CO., LTD. All rights reserved.</p>
+    <p>Created by Mark Lee; Class of 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

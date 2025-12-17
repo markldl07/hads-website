@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HADS - Home</title>
+
+  <!-- Tab icon -->
+  <link rel="icon" type="image/png" href="images/hads-logo.png">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
-  <!-- Green announcement bar at the top -->
-  <div class="announcement-bar">
-    Volunteer recruitment for the 2025–2026 school year is now open. Join us on our next shelter visit!
-  </div>
+<body class="page-home">
 
   <!-- Navbar -->
   <header>
@@ -20,35 +20,48 @@
         <img src="images/hads-logo.png" alt="HADS Logo">
       </a>
 
+      <!-- mobile hamburger menu -->
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="aboutus.html">About us</a></li>
 
         <li class="dropdown">
-          <a href="services.html" class="dropbtn">Services ▾</a>
+          <a href="departments.html" class="dropbtn">Departments ▾</a>
           <ul class="dropdown-content">
-            <li><a href="services.html">Our Mission</a></li>
-            <li><a href="services.html">What We Do</a></li>
-            <li><a href="services.html">Adoption Support</a></li>
-            <li><a href="services.html">Community Events</a></li>
+            <li><a href="departments.html">Leadership Structure</a></li>
+            <li><a href="departments.html">Departments &amp; Roles</a></li>
+            <li><a href="departments.html">Member Roster</a></li>
           </ul>
         </li>
 
         <li><a href="partners.html">Partners</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <!--<li><a href="history.html">History</a></li>-->
       </ul>
     </nav>
   </header>
 
-  <!-- HERO (big background with stats, similar to SJAMUN) -->
-  <section class="hero">
+  <!-- HERO -->
+  <section class="hero reveal">
     <div class="hero-inner">
+      <p class="hero-eyebrow">Student led animal shelter outreach</p>
       <h1 class="hero-title">HADS</h1>
-      <p class="hero-subtitle">Animal shelter outreach at St. Johnsbury Academy Jeju</p>
+      <p class="hero-subtitle">Designed for students. Built for shelter animals.</p>
       <p class="hero-tagline">
         Based on Jeju Island, South Korea · Volunteering with local shelters since 2020
       </p>
+
+      <div class="hero-actions">
+        <a href="schedule.html" class="hero-cta">Upcoming shelter trips</a>
+        <a href="aboutus.html" class="hero-secondary">What is HADS?</a>
+      </div>
 
       <div class="hero-stats">
         <div class="hero-stat">
@@ -56,51 +69,186 @@
           <span class="label">Year Started</span>
         </div>
         <div class="hero-stat">
-          <span class="number">3+</span>
-          <span class="label">Shelter Partners</span>
+          <span class="number">10+</span>
+          <span class="label">Partners</span>
         </div>
         <div class="hero-stat">
-          <span class="number">1,000+</span>
+          <span class="number">1150+</span>
           <span class="label">Volunteer Hours</span>
         </div>
         <div class="hero-stat">
-          <span class="number">100+</span>
+          <span class="number">2000+</span>
           <span class="label">Animals Helped</span>
         </div>
       </div>
-
-      <a href="aboutus.html" class="hero-cta">Learn more about HADS</a>
     </div>
-  </section>
 
-  <!-- MESSAGE SECTION (like the Secretary General message) -->
-  <section class="section message-section">
-    <div class="message-layout">
-      <div class="message-photo-wrapper">
-        <!-- you can later replace this with a portrait or another photo -->
-        <img src="images/HADS.png" alt="HADS volunteers at a shelter">
+    <div class="hero-visual">
+      <div class="hero-photo-main">
+        <img src="images/251018HappyShelter/251018 Happy.jpeg"
+             alt="HADS volunteers walking dogs at a Jeju shelter">
       </div>
 
-      <div class="message-text">
-        <h2>Message from the HADS Leadership</h2>
-        <p>
-          HADS began as a small group of students who simply wanted to spend time with abandoned
-          dogs and cats on Jeju. Over time, those weekend visits grew into a club that coordinates
-          regular shelter trips, supports local rescues, and helps more students build long term
-          relationships with animals in need.
-        </p>
-        <p>
-          Our goal is to make animal welfare feel real and local. Every trip is a chance to clean,
-          walk, socialize, and care for animals who are still waiting for a permanent home. At the same
-          time, we learn responsibility, empathy, and what it means to show up consistently for our
-          community.
-        </p>
-        <p class="message-signature">
-          On behalf of our members and partner shelters, thank you for supporting HADS and the animals we serve.
-        </p>
+      <div class="hero-floating-pill hero-pill-top">
+        <span class="pill-dot"></span>
+        Weekend shelter visits with dogs
+      </div>
+
+      <div class="hero-floating-pill hero-pill-bottom">
+        <span class="pill-dot"></span>
+        Clean kennels. Long walks. Real care.
       </div>
     </div>
+
+    <button class="hero-scroll" type="button" aria-label="Scroll to HADS overview">
+      <span>Scroll</span>
+      <span class="hero-scroll-arrow">⌄</span>
+    </button>
   </section>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- OVERVIEW SECTION -->
+    <section id="home-overview" class="section home-overview reveal">
+      <div class="home-section-header">
+        <p class="eyebrow">Why HADS exists</p>
+        <h2>Friendly for dogs. Real for students.</h2>
+        <p class="section-intro">
+          HADS connects St. Johnsbury Academy Jeju students with abandoned dogs and cats at local
+          shelters so that every visit feels intentional, calm, and meaningful.
+        </p>
+      </div>
+
+      <div class="home-overview-grid">
+        <article class="home-feature">
+          <p class="home-feature-label">Shelter visits</p>
+          <h3 class="home-feature-title">Weekend trips that feel simple</h3>
+          <p class="home-feature-text">
+            Students sign up, ride the school bus to partner shelters, and spend the day cleaning,
+            walking, and socializing animals in a safe, organized way.
+          </p>
+        </article>
+
+        <article class="home-feature">
+          <p class="home-feature-label">For the animals</p>
+          <h3 class="home-feature-title">Dogs get more than food and water</h3>
+          <p class="home-feature-text">
+            Regular visits mean better enrichment, cleaner spaces, and more chances for shy animals
+            to slowly trust people again.
+          </p>
+        </article>
+
+        <article class="home-feature">
+          <p class="home-feature-label">For students</p>
+          <h3 class="home-feature-title">A gentle way to learn responsibility</h3>
+          <p class="home-feature-text">
+            New volunteers get guidance from experienced members and staff so that caring for dogs
+            feels rewarding instead of overwhelming.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE DOG STRIP HORIZONTAL SCROLLLLLL -->
+    <section class="section home-dogs reveal">
+      <div class="home-section-header">
+        <p class="eyebrow">At the shelters</p>
+        <h2>Meet some of the dogs we visit</h2>
+        <p class="section-intro">
+          Scroll sideways or tap the arrows to browse a few of the many friends we have met on Jeju.
+        </p>
+      </div>
+
+      <div class="dog-slider-wrapper">
+        <button class="dog-slider-arrow" type="button" aria-label="Scroll left" data-direction="prev">
+          ‹
+        </button>
+
+        <div class="dog-slider">
+          <article class="dog-card">
+            <img src="images/251018HappyShelter/251018 Happy.jpeg"
+                 alt="Student walking a dog at Happy Shelter">
+            <div class="dog-card-body">
+              <h3 class="dog-card-name">Nurung</h3>
+              <p class="dog-card-text">
+                A gentle senior dog who loves slow walks, sun, and quiet attention from students.
+              </p>
+              <span class="dog-card-chip">Happy Shelter · Weekend visit</span>
+            </div>
+          </article>
+
+          <article class="dog-card">
+            <img src="images/HADS.png"
+                 alt="HADS volunteers spending time with multiple dogs">
+            <div class="dog-card-body">
+              <h3 class="dog-card-name">Hodu</h3>
+              <p class="dog-card-text">
+                Curious and energetic, always the first to greet the bus when volunteers arrive.
+              </p>
+              <span class="dog-card-chip">Jeju city shelter · Adoption ready</span>
+            </div>
+          </article>
+
+          <article class="dog-card">
+            <img src="images/HADS.png"
+                 alt="Students gently brushing a dog at a shelter">
+            <div class="dog-card-body">
+              <h3 class="dog-card-name">Bori</h3>
+              <p class="dog-card-text">
+                Shy at first, but slowly opens up when students sit nearby and move at her pace.
+              </p>
+              <span class="dog-card-chip">Partner shelter · Long term resident</span>
+            </div>
+          </article>
+        </div>
+
+        <button class="dog-slider-arrow" type="button" aria-label="Scroll right" data-direction="next">
+          ›
+        </button>
+      </div>
+    </section>
+
+    <!-- MESSAGE FROM LEADERS SECTION 
+    <section class="section message-section reveal">
+      <div class="message-layout">
+        <div class="message-photo-wrapper">
+          <img src="images/HADS.png" alt="HADS volunteers at a shelter">
+        </div>
+
+        <div class="message-text">
+          <h2>Message from the HADS Leadership</h2>
+          <p>
+            HADS began as a small group of students who simply wanted to spend time with abandoned
+            dogs and cats on Jeju. Over time, those weekend visits grew into a club that coordinates
+            regular shelter trips, supports local rescues, and helps more students build long term
+            relationships with animals in need.
+          </p>
+          <p>
+            Our goal is to make animal welfare feel real and local. Every trip is a chance to clean,
+            walk, socialize, and care for animals who are still waiting for a permanent home. At the same
+            time, we learn responsibility, empathy, and what it means to show up consistently for our
+            community.
+          </p>
+          <p class="message-signature">
+            On behalf of our members and partner shelters, thank you for supporting HADS and the animals we serve.
+          </p>
+        </div>
+      </div>
+    </section>
+    -->
+  </main>
+
+  <!-- HADS Mascot -->
+  <div class="mascot" aria-label="HADS mascot">
+    <div class="mascot-bubble" id="mascot-bubble">
+      Hi, I am the HADS mascot. Scroll and I will show you around.
+    </div>
+    <img
+      class="mascot-image"
+      src="images/temporaryHADSMascot.png"
+      alt="HADS mascot, a friendly Jindo mix"
+    >
+  </div>
 
   <footer>
     <p>TEL : 010-3845-2644 | E mail : hads224@gmail.com</p>
@@ -108,5 +256,7 @@
     <p>Created by Mark Lee · Class of 2026</p>
   </footer>
 
+  <!-- script loaded at the bottom -->
+  <script src="script.js"></script>
 </body>
 </html>

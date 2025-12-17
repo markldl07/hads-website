@@ -4,46 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HADS Photo Gallery</title>
+  <link rel="icon" type="image/png" href="images/hads-logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-gallery">
 
-  <!-- Announcement bar -->
-  <div class="announcement-bar">
-    Volunteer recruitment for the 2025–2026 school year is now open. Join us on our next shelter visit!
-  </div>
-
-  <!-- Shared navbar -->
   <header>
     <nav>
       <a href="index.html" class="logo-container">
         <img src="images/hads-logo.png" alt="HADS Logo">
       </a>
 
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="aboutus.html">About us</a></li>
 
         <li class="dropdown">
-          <a href="services.html" class="dropbtn">Services ▾</a>
+          <a href="departments.html" class="dropbtn">Departments ▾</a>
           <ul class="dropdown-content">
-            <li><a href="services.html">Our Mission</a></li>
-            <li><a href="services.html">What We Do</a></li>
-            <li><a href="services.html">Adoption Support</a></li>
-            <li><a href="services.html">Community Events</a></li>
+            <li><a href="departments.html">Leadership Structure</a></li>
+            <li><a href="departments.html">Departments & Roles</a></li>
+            <li><a href="departments.html">Member Roster</a></li>
           </ul>
         </li>
 
         <li><a href="partners.html">Partners</a></li>
         <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <!--<li><a href="history.html">History</a></li>-->
       </ul>
     </nav>
   </header>
 
   <main>
     <!-- Title and intro -->
-    <section class="gallery-header">
+    <section class="gallery-header reveal">
       <h1>Photo Gallery</h1>
       <p>
         Moments from our shelter visits, fundraisers, and adoption events.
@@ -51,88 +52,74 @@
       </p>
     </section>
 
+    <!-- Event 0: 251018 HappyShelter -->
+    <section class="gallery-section reveal">
+      <h3 class="gallery-event-title">October 18th Happy Shelter Volunteering</h3>
 
-    <!-- Event 0: 251018HappyShelter -->
-<section class="gallery-section">
-  <h3 class="gallery-event-title">October 18th Happy Shelter Volunteering</h3>
-  <p class="gallery-event-subtitle">
-    Students organized a school bazaar to raise funds for local animal shelters.
-  </p>
-<!--이 부분부터 다 고칠것-->
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img loading="lazy" src="images/251018HappyShelter/IMG_0738.jpg" alt="HADS Bazaar Group Photo">
+          <p class="caption">Group photo at the end of the bazaar.</p>
+        </div>
 
+        <div class="gallery-item">
+          <img loading="lazy" src="images/251018HappyShelter/IMG_0754.jpg" alt="Students running a booth at the bazaar">
+          <p class="caption">Students running the HADS booth and sharing adoption info.</p>
+        </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="images/KakaoTalk_Photo_2025-11-09-00-34-31 001.jpg" alt="HADS Bazaar Group Photo">
-      <p class="caption">Group photo at the end of the bazaar.</p>
-    </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="images/251018HappyShelter/IMG_0764.jpg" alt="Haram taking care of dogs at the shelter">
+          <p class="caption">Haram is taking care of the dogs at the shelter!</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="gallery-item">
-      <img src="images/bazaar2.jpg" alt="Students running a booth at the bazaar">
-      <p class="caption">Students running the HADS booth and sharing adoption info.</p>
-    </div>
+    <!-- Event 1: JDC Bazaar -->
+    <section class="gallery-section reveal">
+      <h2 class="gallery-event-title">JDC Bazaar</h2>
 
-    <div class="gallery-item">
-      <img src="images/bazaar3.jpg" alt="Donation table at the bazaar">
-      <p class="caption">Donation table filled with treats and supplies for shelters.</p>
-    </div>
-  </div>
-</section>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img loading="lazy" src="images/bazaar1.jpg" alt="HADS Bazaar Group Photo">
+          <p class="caption">Group photo at the end of the bazaar.</p>
+        </div>
 
-    <!-- Event 1: Bazaar -->
-<section class="gallery-section">
-  <h2 class="gallery-event-title">HADS Bazaar Fundraiser</h2>
-  <p class="gallery-event-subtitle">
-    Students organized a school bazaar to raise funds for local animal shelters.
-  </p>
+        <div class="gallery-item">
+          <img loading="lazy" src="images/bazaar2.jpg" alt="Students running a booth at the bazaar">
+          <p class="caption">Students running the HADS booth and sharing adoption info.</p>
+        </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="images/bazaar1.jpg" alt="HADS Bazaar Group Photo">
-      <p class="caption">Group photo at the end of the bazaar.</p>
-    </div>
+        <div class="gallery-item">
+          <img loading="lazy" src="images/bazaar3.jpg" alt="Donation table at the bazaar">
+          <p class="caption">Donation table filled with treats and supplies for shelters.</p>
+        </div>
+      </div>
+    </section>
 
-    <div class="gallery-item">
-      <img src="images/bazaar2.jpg" alt="Students running a booth at the bazaar">
-      <p class="caption">Students running the HADS booth and sharing adoption info.</p>
-    </div>
+    <!-- Event 2: Shelter Visit – Oct 28, 2025 -->
+    <section class="gallery-section reveal">
+      <h2 class="gallery-event-title">Shelter Visit · October 28, 2025</h2>
+      <p class="gallery-event-subtitle">
+        A full-day volunteering trip focused on walking dogs, cleaning, and socializing shy animals.
+      </p>
 
-    <div class="gallery-item">
-      <img src="images/bazaar3.jpg" alt="Donation table at the bazaar">
-      <p class="caption">Donation table filled with treats and supplies for shelters.</p>
-    </div>
-  </div>
-</section>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img loading="lazy" src="images/oct28_1.jpg" alt="Students walking dogs at the shelter">
+          <p class="caption">Walking rescue dogs around the shelter grounds.</p>
+        </div>
 
-<!-- Event 2: Shelter Visit – Oct 28, 2025 -->
-<section class="gallery-section">
-  <h2 class="gallery-event-title">Shelter Visit · October 28, 2025</h2>
-  <p class="gallery-event-subtitle">
-    A full-day volunteering trip focused on walking dogs, cleaning, and socializing shy animals.
-  </p>
+        <div class="gallery-item">
+          <img loading="lazy" src="images/oct28_2.jpg" alt="Students cleaning kennels">
+          <p class="caption">Members cleaning kennels and refreshing bedding.</p>
+        </div>
 
-  <div class="gallery-grid">
-    <div class="gallery-item">
-      <img src="images/oct28_1.jpg" alt="Students walking dogs at the shelter">
-      <p class="caption">Walking rescue dogs around the shelter grounds.</p>
-    </div>
-
-    <div class="gallery-item">
-      <img src="images/oct28_2.jpg" alt="Students cleaning kennels">
-      <p class="caption">Members cleaning kennels and refreshing bedding.</p>
-    </div>
-
-    <div class="gallery-item">
-      <img src="images/oct28_3.jpg" alt="Group photo from October 28 visit">
-      <p class="caption">Group photo after the October 28 volunteer session.</p>
-    </div>
-
-    <!-- add more cards for this event if you want -->
-  </div>
-</section>
-
-<!-- Event 3: add another event here later if you want -->
-
+        <div class="gallery-item">
+          <img loading="lazy" src="images/oct28_3.jpg" alt="Group photo from October 28 visit">
+          <p class="caption">Group photo after the October 28 volunteer session.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -141,5 +128,6 @@
     <p>Created by Mark Lee · Class of 2026</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
